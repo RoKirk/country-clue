@@ -3,10 +3,8 @@
 **Project decription:** Search engine, open-data application that renders various information on sport athletes.
 
 ## API Snippet
+![image](https://media.git.generalassemb.ly/user/24824/files/8412c980-3dff-11ea-9cba-616dda6da928)
 
-```
-Paste a snippet received from a call to your API that shows the shape of the data
-```
 
 ## Wireframes
 
