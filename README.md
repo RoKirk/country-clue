@@ -6,8 +6,6 @@
 
 ![image](https://media.git.generalassemb.ly/user/24824/files/86901600-3e35-11ea-8af6-1c76584cf2d3)
 
-
-
 ## Wireframes
 
 Display all wireframes here with any neccessary descriptions.
@@ -31,7 +29,8 @@ List any additional functionality you would like to implement once MVP has been 
 
 ## React Component Hierarchy
 
-IMG_0758.jpg
+![image](https://media.git.generalassemb.ly/user/24824/files/32b41a00-3e93-11ea-9bba-83b5339424ea)
+
 ## Components
 
 Based on the initial logic defined in the previous section, try to breakdown the logic further into stateless/stateful components. 
