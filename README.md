@@ -1,4 +1,4 @@
-# Sports-Tab
+# Country Club
 
 **Project decription:** Open-data source application that renders various information on sport athletes.
 
