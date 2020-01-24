@@ -31,8 +31,7 @@ List any additional functionality you would like to implement once MVP has been 
 
 ## React Component Hierarchy
 
-Include an image of your component hierarchy that shows the data flow and architectural design of your app.
-
+IMG_0758.jpg
 ## Components
 
 Based on the initial logic defined in the previous section, try to breakdown the logic further into stateless/stateful components. 
