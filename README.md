@@ -12,20 +12,16 @@
 
 ### MVP
 
-Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP EXAMPLE:
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- Create an Input Field that accepts User Input in the form of a "String".
+- Create a Button, and Button functionality that submits Users Input.
+- Find and use external API. 
+- Render data to page based on User Input.
 
 ### Post-MVP
 
-List any additional functionality you would like to implement once MVP has been reached.
-
-#### PostMVP EXAMPLE:
-- Add user auth
+- Render Country Flag's as the background image for the [Route 2] <Main Component/>.
+- Produce the Countries Native Name within the <Header Component/>.
+- Play sound: Find API that conatins audio files of Countries National Anthem. 
 
 ## React Component Hierarchy
 
