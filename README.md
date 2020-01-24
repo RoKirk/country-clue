@@ -1,6 +1,6 @@
 # Country Clue
 
-**Project decription:** Open-data source application that renders various information on 250 Countries around the World based on user-input.
+**Project decription:** Open-data source application that renders various information on 195 Countries around the World based on user-input.
 
 ## API Snippet
 
