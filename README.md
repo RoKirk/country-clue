@@ -19,8 +19,8 @@
 
 ### Post-MVP
 
-- Render Country Flag's as the background image for [Route 2] of the <Main Component/>.
-- Produce the Countries Native Name within [Route 2] of the <Header Component/>.
+- Render Country Flag's as the background image for [Route 2] of the Main Component.
+- Produce the Countries Native Name within [Route 2] of the Header Component.
 - Play sound: Find API that conatins audio files of Countries National Anthem. 
 
 ## React Component Hierarchy
@@ -29,12 +29,16 @@
 
 ## Components
 
-Based on the initial logic defined in the previous section, try to breakdown the logic further into stateless/stateful components. 
-
 | Component | Description |Type |
 | --- | --- | --- |
-| Header | The Header receives props that render multiple nav titles and links | Functional |
-| Main | This component houses multiple rendered views through React Router and controls data received from the initial API call in state | Class |
+| App | Contains State and access to State. App passes down (props) to Sub-Components. | Class |
+| Header | The Header receives props that render multiple Header titles | Class |
+| Main | Contains the Search Bar and Search Button that will be dynamic in nature and influence State. This component houses multiple rendered views through React Router and controls data received from the initial API call in state | Class |
+| Search Bar/Input Field | Recieves User Input in the form of a String value. | Class |
+| Search Button | Will execute the GET request from Axios when User based event occurs. | Class |
+| Country Info | Receives Props that render Counrty Information to screen. | Class |
+| Dynamic Background | Will influence the background image based on the State | Class |
+| Footer | Contains section that includes information on the author of the program and General Assembly logo seal. | Functional |
 
 ## Priority Matrix
 
