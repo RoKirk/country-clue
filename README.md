@@ -19,8 +19,8 @@
 
 ### Post-MVP
 
-- Render Country Flag's as the background image for the [Route 2] <Main Component/>.
-- Produce the Countries Native Name within the <Header Component/>.
+- Render Country Flag's as the background image for [Route 2] of the <Main Component/>.
+- Produce the Countries Native Name within [Route 2] of the <Header Component/>.
 - Play sound: Find API that conatins audio files of Countries National Anthem. 
 
 ## React Component Hierarchy
