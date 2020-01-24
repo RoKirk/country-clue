@@ -8,7 +8,7 @@
 
 ## Wireframes
 
-Display all wireframes here with any neccessary descriptions.
+![image](https://media.git.generalassemb.ly/user/24824/files/63488380-3e94-11ea-804d-be3da3a8e1db)
 
 ### MVP
 
