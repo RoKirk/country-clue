@@ -4,7 +4,7 @@
 
 ## API Snippet
 
-![image](https://media.git.generalassemb.ly/user/24824/files/86901600-3e35-11ea-8af6-1c76584cf2d3)
+![image](https://media.git.generalassemb.ly/user/24824/files/00101e80-3e9f-11ea-98c3-2b4b227b092d)
 
 ## Wireframes
 
