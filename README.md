@@ -29,7 +29,7 @@ List any additional functionality you would like to implement once MVP has been 
 
 ## React Component Hierarchy
 
-![image](https://media.git.generalassemb.ly/user/24824/files/32b41a00-3e93-11ea-9bba-83b5339424ea)
+![image](https://media.git.generalassemb.ly/user/24824/files/aa367900-3e94-11ea-8ea5-cde9cf11bce9)
 
 ## Components
 
