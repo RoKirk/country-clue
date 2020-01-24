@@ -42,7 +42,7 @@
 
 ## Priority Matrix
 
-Include an image of your Priority Matrix (X is time and Y is priority)
+![image](https://media.git.generalassemb.ly/user/24824/files/9133c500-3ea0-11ea-8bd9-d17b856b5436)
 
 ## Timeframes
 
