@@ -19,7 +19,7 @@
 
 ### Post-MVP
 
-- Render Country Flag's as the background image for [Route 2] of the Main Component.
+- Render Countries Flag as the background image for [Route 2] of the Main Component.
 - Produce the Countries Native Name within [Route 2] of the Header Component.
 - Play sound: Find API that conatins audio files of Countries National Anthem. 
 
@@ -36,7 +36,7 @@
 | Main | Contains the Search Bar and Search Button that will be dynamic in nature and influence State. This component houses multiple rendered views through React Router and controls data received from the initial API call in state | Class |
 | Search Bar/Input Field | Recieves User Input in the form of a String value. | Class |
 | Search Button | Will execute the GET request from Axios when User based event occurs. | Class |
-| Country Info | Receives Props that render Counrty Information to screen. | Class |
+| Country Info | Receives Props that render Country Information to screen. | Class |
 | Dynamic Background | Will influence the background image based on the State | Class |
 | Footer | Contains section that includes information on the author of the program and General Assembly logo seal. | Functional |
 
@@ -64,10 +64,10 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 24th| Project Pitch / Wireframes / Priority Matrix / Functional Components | Complete
-|Jan 27th| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28th| Pseudocode / actual code | Incomplete
+|Jan 27th| Create component files, link data flow to each page, create search bar & search button | Incomplete
+|Jan 28th| Pseudocode, and create functions | Incomplete
 |Jan 29th| Initial Clickable Model  | Incomplete
-|Jan 30th| MVP | Incomplete
+|Jan 30th| MVP, Post MVP | Incomplete
 |Jan 31tst| Present | Incomplete
 
 ## Additional Libraries

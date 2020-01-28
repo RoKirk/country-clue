@@ -1,13 +1,13 @@
 import React from "react";
-import Home from "./Home Folder/Home";
-import InfoFlag from "./Info-Flag Folder/InfoFlag"
+import Home from "./homefolder/Home";
+import InfoFlag from "./infoflagfolder/InfoFlag"
 
 function Main(props) {
     return (
         <div>
 
             {/* Passing the two functions from APP.js even further down to Home. */}
-            <Home userClick={props.userClick} userInput={props.userInput}/>
+            <Home userClick={props.userClick} userInput={props.userInput} />
             
             <InfoFlag />
         </div>

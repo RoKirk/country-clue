@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: url("./World_Atlas.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 
 .App-logo {
@@ -43,4 +46,35 @@
 
 .ro {
   color: blue;
+}
+
+.static-header {
+  font-family: 'Luckiest Guy', cursive;
+
+  color: red;
+  font-size: 50px;
+}
+
+.home-route {
+  background-image: url("./World_Atlas.jpg");
+  background-size: cover;
+}
+
+span {
+  color: orangered;
+  font-size: 30px;
+}
+
+.country-name {
+    font-size: 30px;
+    color: black;
+
+
+}
+
+.currency-symbol {
+    font-size: 30px;
+    color: black;
+
+
 }

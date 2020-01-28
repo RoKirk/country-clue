@@ -6,8 +6,9 @@ function InfoFlag(props) {
     return (
         <div>
             <h1>Hello, I'm InfoFlag</h1>
-            <Info />
-            <DynamicBackground />
+            <Info results={props.results}/>
+            {/* <DynamicBackground results={props.results && props.results[0].Flag}/> */}
+            
         </div>
     )
     
