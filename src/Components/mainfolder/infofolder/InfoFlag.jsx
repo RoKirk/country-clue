@@ -1,6 +1,4 @@
 import React from "react";
-// import DynamicBackground from "./DynamicBackground";
-// import Info from "./Info";
 import { NavLink } from "react-router-dom";
 
 

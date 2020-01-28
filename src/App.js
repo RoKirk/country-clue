@@ -4,8 +4,8 @@ import { Route } from "react-router-dom";
 import "normalize.css"
 import './App.css';
 import Header from "./Components/headerfolder/Header"
-import Home from "./Components/mainfolder/homefolder/Home";
-import InfoFlag from "./Components/mainfolder/infoflagfolder/InfoFlag";
+import Home from "./Components/mainfolder/searchfeaturesfolder/Home";
+import InfoFlag from "./Components/mainfolder/InfoFlag";
 import Footer from "./Components/Footer"
 
 
