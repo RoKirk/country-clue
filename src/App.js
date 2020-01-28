@@ -4,12 +4,9 @@ import { Route } from "react-router-dom";
 import "normalize.css"
 import './App.css';
 import Header from "./Components/headerfolder/Header"
-import Main from "./Components/mainfolder/Main"
-import Footer from "./Components/Footer"
 import Home from "./Components/mainfolder/homefolder/Home";
 import InfoFlag from "./Components/mainfolder/infoflagfolder/InfoFlag";
-// import StaticHeader from "./Components/headerfolder/StaticHeader";
-// import DynamicHeader from "./Components/headerfolder/DynamicHeader";
+import Footer from "./Components/Footer"
 
 
 class App extends Component {
@@ -65,25 +62,22 @@ class App extends Component {
       <div className="App">
         <Header results={this.state.results} />
 
+
+        {/* Sending the two functions as props to Home. ...Send them down to Home to send them down further to where they need to be.*/}
         <Home userClick={this.userClick} userInput={this.userInput} />
 
+        
         <Route exact path="/" component={() => (<div></div>)} />
 
-        <Route exact path="/results" component={() => (<div>
+        <Route exact path="/results" component={() => (<div><InfoFlag results={this.state.results} /></div>)} />
 
-          <InfoFlag results={this.state.results} />
-        </div>
-        )} />
-        {/* <Header /> */}
-
-        {/* Sending the two functions as props to Main. ...Send them down to Main to send them down further to where they need to be.*/}
-        {/* <Main userClick={this.userClick} userInput={this.userInput} /> */}
-
+        
         <Footer />
 
       </div>
     );
   }
 }
+
 
 export default App;
