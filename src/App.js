@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import { Route } from "react-router-dom";
+import "normalize.css"
 import './App.css';
 import Header from "./Components/headerfolder/Header"
 import Main from "./Components/mainfolder/Main"
 import Footer from "./Components/Footer"
 import Home from "./Components/mainfolder/homefolder/Home";
 import InfoFlag from "./Components/mainfolder/infoflagfolder/InfoFlag";
-import StaticHeader from "./Components/headerfolder/StaticHeader";
-import DynamicHeader from "./Components/headerfolder/DynamicHeader";
+// import StaticHeader from "./Components/headerfolder/StaticHeader";
+// import DynamicHeader from "./Components/headerfolder/DynamicHeader";
 
 
 class App extends Component {
@@ -58,27 +59,25 @@ class App extends Component {
     }
     )
   }
-  
+
   render() {
     return (
       <div className="App">
-
-        {/* <div className="home-container"> */}
-        <StaticHeader />
+        <Header results={this.state.results} />
 
         <Home userClick={this.userClick} userInput={this.userInput} />
 
-        <Route exact path="/" component={() => (<div><Home /></div>)} />
-        {/* </div> */}
+        <Route exact path="/" component={() => (<div></div>)} />
 
-        {/* <div className="info-flag-container"> */}
-        {/* <Route exact path="/:name" component={() => (<div><InfoFlag /></div>)} /> */}
-        {/* </div> */}
+        <Route exact path="/results" component={() => (<div>
+
+          <InfoFlag results={this.state.results} />
+        </div>
+        )} />
         {/* <Header /> */}
 
         {/* Sending the two functions as props to Main. ...Send them down to Main to send them down further to where they need to be.*/}
         {/* <Main userClick={this.userClick} userInput={this.userInput} /> */}
-        <InfoFlag results={this.state.results} />
 
         <Footer />
 

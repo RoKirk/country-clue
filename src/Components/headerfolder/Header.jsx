@@ -5,12 +5,17 @@ import DynamicHeader from "./DynamicHeader";
 
 function Header(props) {
     return (
-            <div>
-                <StaticHeader />
-                <DynamicHeader/>
-            </div>
-        )
-    
+        <div>
+
+            <Route exact path="/" component={StaticHeader} />
+
+            <Route exact path="/results" component={() => (<DynamicHeader results={props.results}/>)} />
+
+
+
+        </div>
+    )
+
 }
 
 export default Header;

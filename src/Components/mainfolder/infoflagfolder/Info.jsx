@@ -6,7 +6,6 @@ function Info(props) {
         <div>
 
             {/* <div>{props.results && props.results[0].NativeName}</div> */}
-            <div className="country-name"><span>Name: </span> {props.results && props.results[0].Name}</div>
             <div><span>Region: </span> {props.results && props.results[0].Region}</div>
             <div><span>Sub-Region: </span> {props.results && props.results[0].SubRegion}</div>
             <div><span>Latitude: </span> {props.results && props.results[0].Latitude}</div>

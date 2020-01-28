@@ -9,8 +9,9 @@ function DynamicHeader(props) {
             {/* <Route className="dynamic-route" exact path="/:id" component={DynamicHeader} /> */}
 
             <div className="dynamic-header">
-                {props.results && props.results[0].NativeName}
-                <h1>I'm Smart</h1>
+                <h1>{props.results && props.results[0].NativeName}</h1>
+                <h2>{props.results && props.results[0].Name}</h2>
+
             </div>
 
         </div>
@@ -18,6 +19,8 @@ function DynamicHeader(props) {
         )
     
 }
+console.log(DynamicHeader)
+
 
 
 export default DynamicHeader;
