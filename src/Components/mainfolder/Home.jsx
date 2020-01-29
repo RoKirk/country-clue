@@ -4,15 +4,15 @@ import SearchButton from "./SearchButton";
 
 
 function Home(props) {
-    
+
     return (
-        <div>
+        <div className="home-components">
             {/* Passing these functions down to the components that are going to use them directly. */}
-            <SearchBar userInput={props.userInput}/>
+            <SearchBar userInput={props.userInput} searchInput={props.searchInput} />
             <SearchButton userClick={props.userClick} />
         </div>
     )
-    
+
 }
 
 

@@ -7,7 +7,7 @@ import DynamicHeader from "./DynamicHeader";
 function Header(props) {
     
     return (
-        <div>
+        <div className='header'>
 
             {/* ***In here... I referenced 2 routes to 2 different components.
             *** Also, in the second Route("/results"), I'm passing results to 

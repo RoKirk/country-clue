@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -5,7 +6,6 @@
 
 .App {
   text-align: center;
-  background-image: url("./World_Atlas.jpg");
   background-size: cover;
   background-position: bottom;
   height: 100vh;
@@ -56,9 +56,9 @@
 
 .static-header {
   font-family: 'Luckiest Guy', cursive;
-
   color: red;
   font-size: 50px;
+	-webkit-text-stroke: 3px white;
 }
 
 .home-route {
@@ -81,10 +81,44 @@ span {
 .currency-symbol {
     font-size: 30px;
     color: black;
-
-
 }
 
 h1 {
   margin: 0;
+}
+
+.country-flag {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  z-index: -10;
+}
+
+.flag {
+  z-index: -10;
+  height: 100%;
+}
+
+.footer-credits, .dynamic-header, .data-box, .footer-credits, .header {
+  position: relative;
+  z-index: 100;
+}
+
+.dynamic-header h1, .dynamic-header h2{
+  position: relative;
+  font-size: 75px;
+  z-index: 100;
+  color: black;
+	-webkit-text-stroke: 3px white;
+}
+
+.data-box {
+  font-size: 20px;
+  padding: 40px;
+  /* -webkit-text-stroke: 3px white; */
+
+}
+
+.input-field {
+  text-align: center;
 }
