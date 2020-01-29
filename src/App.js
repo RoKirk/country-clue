@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
-import { Route } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 import "normalize.css"
 import './App.css';
 import Header from "./Components/headerfolder/Header"
@@ -8,6 +8,7 @@ import Home from "./Components/mainfolder/Home";
 import CountryInfoData from "./Components/mainfolder/CountryInfoData";
 import Footer from "./Components/Footer"
 import defaultBackground from "./World_Atlas.jpg"
+// import ReactMapGL from 'react-map-gl'
 
 
 class App extends Component {
@@ -91,6 +92,7 @@ class App extends Component {
         Send them down to Home to send them down further to where they need to be.*/}
         <Home userClick={this.userClick} userInput={this.userInput} searchInput={this.state.searchInput} />
 
+        <NavLink to="">Asia</NavLink>
 
         <Route exact path="/" component={() => (<div></div>)} />
 
