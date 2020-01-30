@@ -14,7 +14,7 @@ function CountryInfoData(props) {
             <div><span>Currency Name: </span>{props.results && props.results[0].CurrencyName}</div>
             <div className="currency-symbol"><span>Currency Symbol: </span>{props.results && props.results[0].CurrencySymbol}</div>
             {/* <Info results={props.results} /> */}
-            <NavLink onClick={props.backToDefault} to="/">Back</NavLink>
+            <NavLink className="search-link-button" onClick={props.backToDefault} to="/">Back</NavLink>
             {/* <div className="country-flag"><img className="flag" src={props.results && props.results[0].Flag} /></div> */}
             {/* <DynamicBackground results={props.results && props.results[0].Flag}/> */}
         </div>

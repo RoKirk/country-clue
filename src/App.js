@@ -119,20 +119,20 @@ class App extends Component {
 
 
         <Route exact path="/">
-          <div className="homepage-links">
-          <span><NavLink onClick={() => { this.apiCallForLinks("Africa") }} to="/list">Africa</NavLink></span>
-          <span><NavLink onClick={() => { this.apiCallForLinks("Americas") }} to="/list">Americas</NavLink></span>
-          <span><NavLink onClick={() => { this.apiCallForLinks("Asia") }} to="/list">Asia</NavLink></span>
-          <span><NavLink onClick={() => { this.apiCallForLinks("Europe") }} to="/list">Europe</NavLink></span>
-          <span><NavLink onClick={() => { this.apiCallForLinks("Ocenia") }} to="/list">Ocenia</NavLink></span>
-          <span><NavLink onClick={() => { this.apiCallForLinks("Polar") }} to="/list">Polar</NavLink></span>
-        </div>
+          <div className="homepage-container">
+            <span><NavLink className="homepage-links" onClick={() => { this.apiCallForLinks("Africa") }} to="/list">Africa</NavLink></span>
+            <span><NavLink className="homepage-links" onClick={() => { this.apiCallForLinks("Americas") }} to="/list">Americas</NavLink></span>
+            <span><NavLink className="homepage-links" onClick={() => { this.apiCallForLinks("Asia") }} to="/list">Asia</NavLink></span>
+            <span><NavLink className="homepage-links" onClick={() => { this.apiCallForLinks("Europe") }} to="/list">Europe</NavLink></span>
+            <span><NavLink className="homepage-links" onClick={() => { this.apiCallForLinks("Ocenia") }} to="/list">Ocenia</NavLink></span>
+            <span><NavLink className="homepage-links" onClick={() => { this.apiCallForLinks("Polar") }} to="/list">Polar</NavLink></span>
+          </div>
         </Route>
 
         <Route exact path="/results" component={() => (<div><CountryInfoData results={this.state.results} backToDefault={this.backToDefault} /></div>)} />
-
-        <Route exact path="/list" component={() => (<div><CountryList userClick={this.userClick} linkResults={this.state.linkResults} backToDefault={this.backToDefault} /></div>)} />
-
+       
+        <Route className="country-list-links" exact path="/list" component={() => (<CountryList userClick={this.userClick} linkResults={this.state.linkResults} backToDefault={this.backToDefault} />)} />
+        
         <Footer />
 
       </div>

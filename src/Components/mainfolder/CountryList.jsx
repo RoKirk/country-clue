@@ -5,14 +5,18 @@ import { NavLink } from "react-router-dom";
 function CountryList(props) {
     console.log(props.linkResults)
     return (
-        <div>
-            {props.linkResults.map(function (countryListItem) {
-                return (
-                    <NavLink onClick={() => props.userClick(countryListItem.Name)} to='/results'>
-                        <div className='country-list-item'> {countryListItem.Name} </div>
-                    </NavLink>
-                )
-            })}
+        <div >
+
+            <div className='country-list-item-container'>
+                {props.linkResults.map(function (countryListItem) {
+                    return (
+                          
+                            <NavLink className='country-list-item' onClick={() => props.userClick(countryListItem.Name)} to='/results'>
+                             {countryListItem.Name} 
+                            </NavLink>
+                    )
+                })}
+            </div>
 
 
 
