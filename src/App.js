@@ -8,6 +8,7 @@ import Home from "./Components/mainfolder/Home";
 import CountryInfoData from "./Components/mainfolder/CountryInfoData";
 import Footer from "./Components/Footer"
 import defaultBackground from "./World_Atlas.jpg"
+import CountryList from "./Components/mainfolder/CountryList";
 // import ReactMapGL from 'react-map-gl'
 
 
@@ -18,7 +19,8 @@ class App extends Component {
     this.state = {
       searchInput: "",
       results: null,
-      backgroundImage: defaultBackground
+      backgroundImage: defaultBackground,
+      linkResults: []
     }
 
     //Bind required here if no fat arrow is used on functions
@@ -40,16 +42,37 @@ class App extends Component {
     catch (error) {
       console.log(error)
     }
+    console.log(country)
   }
 
+  apiCallForLinks = async (region) => {
+    const queryString = `http://countryapi.gear.host/v1/Country/getCountries?pRegion=${region}`
+
+    try {
+      const response = await Axios.get(queryString);
+      this.setState({
+        linkResults: response.data.Response,
+      })
+      console.log(response)
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
   // ***These functions are her because they affect State.*** */
   //Fat arrow function "userInput=()=> {" vs regular function "userInput() {""
 
-  userClick = (event) => {
-    this.apiCall()
+  userClick = (name) => {
     this.setState({
-      searchInput: ''
+      searchInput: name
+    }, () => {
+        this.apiCall()
+        this.clearSearch()
     })
+
+    // this.setState({
+    //   searchInput: ''
+    // })
     //We console logged this function to check that it is working... the functioned is being utilized with the lower component that has use for it.
     console.log("Button was clicked.")
   }
@@ -57,7 +80,7 @@ class App extends Component {
   userInput = (event) => {
     event.preventDefault()
     // console.log("Inputting")
-    // console.log(event.target.value)
+    console.log(event.target.value)
     this.setState({
       searchInput: event.target.value,
     }
@@ -92,12 +115,23 @@ class App extends Component {
         Send them down to Home to send them down further to where they need to be.*/}
         <Home userClick={this.userClick} userInput={this.userInput} searchInput={this.state.searchInput} />
 
-        <NavLink to="">Asia</NavLink>
 
-        <Route exact path="/" component={() => (<div></div>)} />
+
+
+        <Route exact path="/">
+          <div className="homepage-links">
+          <span><NavLink onClick={() => { this.apiCallForLinks("Africa") }} to="/list">Africa</NavLink></span>
+          <span><NavLink onClick={() => { this.apiCallForLinks("Americas") }} to="/list">Americas</NavLink></span>
+          <span><NavLink onClick={() => { this.apiCallForLinks("Asia") }} to="/list">Asia</NavLink></span>
+          <span><NavLink onClick={() => { this.apiCallForLinks("Europe") }} to="/list">Europe</NavLink></span>
+          <span><NavLink onClick={() => { this.apiCallForLinks("Ocenia") }} to="/list">Ocenia</NavLink></span>
+          <span><NavLink onClick={() => { this.apiCallForLinks("Polar") }} to="/list">Polar</NavLink></span>
+        </div>
+        </Route>
 
         <Route exact path="/results" component={() => (<div><CountryInfoData results={this.state.results} backToDefault={this.backToDefault} /></div>)} />
 
+        <Route exact path="/list" component={() => (<div><CountryList userClick={this.userClick} linkResults={this.state.linkResults} backToDefault={this.backToDefault} /></div>)} />
 
         <Footer />
 

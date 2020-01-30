@@ -5,12 +5,13 @@ import { NavLink } from "react-router-dom";
 function SearchButton(props) {
     
     return (
-        <div>
+        <div className="search-link">
             {/* Inside of this button... props(function) are being sent down 
             and being utilized in the "button". When the button is clicked... 
             the function in "App.js" is initaited. */}
             {/* <button onClick={props.userClick}>Search</button> */}
-            <NavLink onClick={props.userClick} to="/results">Search</NavLink>
+
+                <NavLink onClick={() => props.userClick(props.searchInput)} to="/results">Search</NavLink>
         </div>
     )
 
