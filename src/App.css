@@ -192,4 +192,10 @@ a.search-link-button.active {
   flex-wrap: wrap;
 }
 
-
+@media only screen and (max-width: 500px) {
+  .homepage-container {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+  }
+}
