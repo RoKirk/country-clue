@@ -123,8 +123,6 @@ h1 {
 .data-box {
   font-size: 20px;
   padding: 40px;
-  /* -webkit-text-stroke: 3px white; */
-
 }
 
 .input-field {
@@ -182,7 +180,6 @@ a.search-link-button.active {
 .homepage-container {
   display: flex;
   align-items: center;
-  /* position: absolute 0 auto; */
   justify-content: space-evenly;
 
 }
@@ -197,5 +194,5 @@ a.search-link-button.active {
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-  }
+}
 }

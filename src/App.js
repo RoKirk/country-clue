@@ -9,7 +9,6 @@ import CountryInfoData from "./Components/mainfolder/CountryInfoData";
 import Footer from "./Components/Footer"
 import defaultBackground from "./World_Atlas.jpg"
 import CountryList from "./Components/mainfolder/CountryList";
-// import ReactMapGL from 'react-map-gl'
 
 
 class App extends Component {
@@ -37,7 +36,6 @@ class App extends Component {
         results: response.data.Response,
         backgroundImage: response.data.Response[0].Flag
       })
-      // console.log(response)
     }
     catch (error) {
       console.log(error)
@@ -69,17 +67,12 @@ class App extends Component {
         this.apiCall()
         this.clearSearch()
     })
-
-    // this.setState({
-    //   searchInput: ''
-    // })
     //We console logged this function to check that it is working... the functioned is being utilized with the lower component that has use for it.
     console.log("Button was clicked.")
   }
 
   userInput = (event) => {
     event.preventDefault()
-    // console.log("Inputting")
     console.log(event.target.value)
     this.setState({
       searchInput: event.target.value,

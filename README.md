@@ -48,14 +48,14 @@
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 5hrs| 0hrs | 0hrs |
+| Adding Form | H | 5hrs| 3hrs | 3hrs |
 | Working with API | H | 3hrs| 3hrs | 3hrs |
-| Search Button | H | 5hrs| 0hrs | 0hrs |
-| Dynamic Background | M | 5hrs| 0hrs | 0hrs |
-| Route | H | 5hrs| 0hrs | 0hrs |
-| Dynamic Header | M | 5hrs| 0hrs | 0hrs |
-| Footer | L | 5hrs| 0hrs | 0hrs |
-| Total | H | 33hrs| 3hrs | 3hrs |
+| Search Button | H | 5hrs| 2hrs | 2hrs |
+| Dynamic Background | M | 5hrs| 5hrs | 5hrs |
+| Route | H | 5hrs| 10hrs | 10hrs |
+| Dynamic Header | M | 5hrs| 5hrs | 5hrs |
+| Footer | L | 5hrs| 2hrs | 2hrs |
+| Total | H | 33hrs| 30hrs | 30hrs |
 
 
 
@@ -64,11 +64,11 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 24th| Project Pitch / Wireframes / Priority Matrix / Functional Components | Complete
-|Jan 27th| Create component files, link data flow to each page, create search bar & search button | Incomplete
-|Jan 28th| Pseudocode, and create functions | Incomplete
-|Jan 29th| Initial Clickable Model  | Incomplete
-|Jan 30th| MVP, Post MVP | Incomplete
-|Jan 31tst| Present | Incomplete
+|Jan 27th| Create component files, link data flow to each page, create search bar & search button | Complete
+|Jan 28th| Pseudocode, and create functions | Complete
+|Jan 29th| Initial Clickable Model  | Complete
+|Jan 30th| MVP, Post MVP | Complete
+|Jan 31tst| Present | Complete
 
 ## Additional Libraries
 
@@ -82,13 +82,33 @@ Utilizing the Route and Slugs. I will review lesson topics as a reference.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet you are proud of, along with a brief description of why.
+Manipulating the "z-index" to order different components layered display on the screen.
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
+.country-flag {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  z-index: -10;
 }
-```
+
+.flag {
+  z-index: -10;
+  height: 100%;
+}
+
+.footer-credits, .dynamic-header, .data-box, .footer-credits, .header {
+  position: relative;
+  z-index: 100;
+}
+
+.dynamic-header h1, .dynamic-header h2{
+  position: relative;
+  font-size: 75px;
+  z-index: 100;
+  color: black;
+	-webkit-text-stroke: 3px white;
+}
+
 
 ## Change Log
  Use this section to document what changes were made in your overall planning and the reasoning behind those changes.  
