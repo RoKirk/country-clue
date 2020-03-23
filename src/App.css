@@ -1,13 +1,16 @@
-body {
-  background-color: black;
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: black;
+}
+
 .App {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
   text-align: center;
   background-size: cover;
   background-position: bottom;
@@ -49,11 +52,7 @@ body {
   }
 }
 
-.footer-credits {
-color: white;
-font-size: 25px;
--webkit-text-stroke: 1px black;
-}
+/*//////////////////////////////////*/
 
 .ro {
   font-family: 'Luckiest Guy', cursive;
@@ -80,15 +79,13 @@ span {
 }
 
 .country-name {
-    font-size: 30px;
-    color: black;
-
-
+  font-size: 30px;
+  color: black;
 }
 
 .currency-symbol {
-    font-size: 30px;
-    color: black;
+  font-size: 30px;
+  color: black;
 }
 
 h1 {
@@ -105,11 +102,6 @@ h1 {
 .flag {
   z-index: -10;
   height: 100%;
-}
-
-.footer-credits, .dynamic-header, .data-box, .footer-credits, .header {
-  position: relative;
-  z-index: 100;
 }
 
 .dynamic-header h1, .dynamic-header h2{
@@ -151,10 +143,6 @@ a.search-link-button.active {
 }
 
 .country-list-item {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 5px;
-
   font-family: 'Luckiest Guy';
   color: white;
   text-transform: uppercase;
@@ -184,15 +172,27 @@ a.search-link-button.active {
 
 }
 
-.country-list-item-container {
-  display: flex;
-  flex-wrap: wrap;
+/* Responsive Design /////////////////////// */
+
+@media only screen and (max-width: 400px) {
+  .static-header {
+    /* display: flex; */
+    /* color: red; */
+    /* background-color: red; */
+    display: block;
+    font-size: 40px;
+    color: saddlebrown;
+    /* flex-shrink: 1; */
+  }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .homepage-container {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 }
+

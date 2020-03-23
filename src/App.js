@@ -103,14 +103,6 @@ class App extends Component {
 
         <Header results={this.state.results} />
 
-
-        {/* Sending the two functions as props to Home...
-        Send them down to Home to send them down further to where they need to be.*/}
-        <Home userClick={this.userClick} userInput={this.userInput} searchInput={this.state.searchInput} />
-
-
-
-
         <Route exact path="/">
           <div className="homepage-container">
             <span><NavLink className="homepage-links" onClick={() => { this.apiCallForLinks("Africa") }} to="/list">Africa</NavLink></span>
@@ -122,11 +114,15 @@ class App extends Component {
           </div>
         </Route>
 
+        {/* Sending the two functions as props to Home...
+        Send them down to Home to send them down further to where they need to be.*/}
+        <Home userClick={this.userClick} userInput={this.userInput} searchInput={this.state.searchInput} />
+
         <Route exact path="/results" component={() => (<div><CountryInfoData results={this.state.results} backToDefault={this.backToDefault} /></div>)} />
        
         <Route className="country-list-links" exact path="/list" component={() => (<CountryList userClick={this.userClick} linkResults={this.state.linkResults} backToDefault={this.backToDefault} />)} />
         
-        <Footer />
+        <Footer className="footer"/>
 
       </div>
     );
