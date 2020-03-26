@@ -26,9 +26,11 @@ class App extends Component {
     // this.userClick= this.userClick.bind(this)
   }
 
+  proxy = "https://lively-mouse-658d.hohenkirkrhol.workers.dev/?"
+    
   apiCall = async () => {
     const country = this.state.searchInput
-    const queryString = `http://countryapi.gear.host/v1/Country/getCountries?pName=${country}`
+    const queryString = `${this.proxy}http://countryapi.gear.host/v1/Country/getCountries?pName=${country}`
 
     try {
       const response = await Axios.get(queryString);
@@ -44,7 +46,7 @@ class App extends Component {
   }
 
   apiCallForLinks = async (region) => {
-    const queryString = `http://countryapi.gear.host/v1/Country/getCountries?pRegion=${region}`
+    const queryString = `${this.proxy}http://countryapi.gear.host/v1/Country/getCountries?pRegion=${region}`
 
     try {
       const response = await Axios.get(queryString);
