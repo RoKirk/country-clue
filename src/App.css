@@ -143,10 +143,10 @@ a.search-link-button.active {
 }
 
 .country-list-item {
-  font-family: 'Luckiest Guy';
+  font-family: 'Luckiest Guy', cursive;
   color: white;
   text-transform: uppercase;
-  -webkit-text-stroke: .5px black;
+  -webkit-text-stroke: .5px rgb(163, 143, 143);
 }
 
 
